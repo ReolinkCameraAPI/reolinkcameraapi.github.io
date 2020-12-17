@@ -1,0 +1,16 @@
+author = "Benehiko"
+baseURL = "https://reolink.oleaintueri.com/"
+languageCode = "en-us"
+title = "ReolinkApi Docs"
+description = "The Unofficial Reolink Api clients documentation for Python and Go."
+theme = "hugo-theme-learn"
+
+[outputs]
+home = [ "HTML", "JSON" ]
+
+# customise theme properties https://themes.gohugo.io//theme/hugo-theme-learn/en/basics/configuration/
+[params]
+disableLandingPageButton = false
+disableBreadcrumb = false
+disableNextPrev = true
+themeVariant = "blue"
