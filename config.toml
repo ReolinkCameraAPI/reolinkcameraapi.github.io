@@ -4,6 +4,7 @@ languageCode = "en-us"
 title = "ReolinkApi Docs"
 description = "The Unofficial Reolink Api clients documentation for Python and Go."
 theme = "hugo-theme-learn"
+publishDir = "docs"
 
 [outputs]
 home = [ "HTML", "JSON" ]
