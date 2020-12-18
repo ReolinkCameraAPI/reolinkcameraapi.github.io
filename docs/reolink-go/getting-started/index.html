@@ -21,21 +21,21 @@
     <title>Getting Started :: ReolinkApi Docs</title>
 
     
-    <link href="/css/nucleus.css?1608256819" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1608256819" rel="stylesheet">
-    <link href="/css/hybrid.css?1608256819" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1608256819" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1608256819" rel="stylesheet">
-    <link href="/css/auto-complete.css?1608256819" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1608256819" rel="stylesheet">
-    <link href="/css/theme.css?1608256819" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1608256819" rel="stylesheet">
+    <link href="/css/nucleus.css?1608311739" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1608311739" rel="stylesheet">
+    <link href="/css/hybrid.css?1608311739" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1608311739" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1608311739" rel="stylesheet">
+    <link href="/css/auto-complete.css?1608311739" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1608311739" rel="stylesheet">
+    <link href="/css/theme.css?1608311739" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1608311739" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1608256819" rel="stylesheet">
+    <link href="/css/theme-blue.css?1608311739" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1608256819"></script>
+    <script src="/js/jquery-3.3.1.min.js?1608311739"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1608256819"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1608256819"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1608311739"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1608311739"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/reolink.oleaintueri.com\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1608256819"></script>
+<script type="text/javascript" src="/js/search.js?1608311739"></script>
 
     
   </div>
@@ -465,8 +465,8 @@
   <ul>
     <li><a href="#installation">Installation</a>
       <ul>
-        <li><a href="#from-source">From source</a></li>
         <li><a href="#using-go-get">Using go get</a></li>
+        <li><a href="#from-source">From source</a></li>
       </ul>
     </li>
     <li><a href="#using">Using</a></li>
@@ -506,11 +506,19 @@
 
 
 	<h2 id="installation">Installation</h2>
-<h3 id="from-source">From source</h3>
-<pre><code>git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git
-</code></pre>
+<p>If <code>go get</code> is not working for you, please check out this amazing post about
+<code>GO111MODULE=ON</code> <a href="https://dev.to/maelvls/why-is-go111module-everywhere-and-everything-about-go-modules-24k">here</a>.</p>
 <h3 id="using-go-get">Using go get</h3>
-<pre><code>go get -u github.com/ReolinkCameraAPI/reolinkapigo
+<pre><code>GO111MODULE=on go get github.com/ReolinkCameraAPI/reolinkapigo@latest
+</code></pre>
+<p>A Specific version using <code>@v0.x.x</code></p>
+<pre><code>GO111MODULE=on go get -u github.com/ReolinkCameraAPI/reolinkapigo@v0.0.1
+</code></pre>
+<h3 id="from-source">From source</h3>
+<pre><code>cd $GOPATH
+mkdir -p src/github.com/ReolinkCameraAPI
+cd src/github.com/ReolinkCameraAPI
+git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git
 </code></pre>
 <h2 id="using">Using</h2>
 <p>Implement a &ldquo;Camera&rdquo; object by passing it an IP address, Username and Password. By instantiating the object, it will try
@@ -523,7 +531,7 @@ commands.</p>
 camera, err := pkg.NewCamera(&quot;foo&quot;, &quot;bar&quot;, &quot;192.168.1.100&quot;)
 
 // now call any of the supported api's by passing it it's resthandler
-ok, err := camera.API.FormatHdd(0)(camera.RestHandler)
+ok, err := camera.FormatHdd(0)(camera.RestHandler)
 </code></pre>
 
 
@@ -747,19 +755,19 @@ ok, err := camera.API.FormatHdd(0)(camera.RestHandler)
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1608256819"></script>
-    <script src="/js/perfect-scrollbar.min.js?1608256819"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1608256819"></script>
-    <script src="/js/jquery.sticky.js?1608256819"></script>
-    <script src="/js/featherlight.min.js?1608256819"></script>
-    <script src="/js/highlight.pack.js?1608256819"></script>
+    <script src="/js/clipboard.min.js?1608311739"></script>
+    <script src="/js/perfect-scrollbar.min.js?1608311739"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1608311739"></script>
+    <script src="/js/jquery.sticky.js?1608311739"></script>
+    <script src="/js/featherlight.min.js?1608311739"></script>
+    <script src="/js/highlight.pack.js?1608311739"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1608256819"></script>
-    <script src="/js/learn.js?1608256819"></script>
-    <script src="/js/hugo-learn.js?1608256819"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1608311739"></script>
+    <script src="/js/learn.js?1608311739"></script>
+    <script src="/js/hugo-learn.js?1608311739"></script>
     
         
-            <script src="/mermaid/mermaid.js?1608256819"></script>
+            <script src="/mermaid/mermaid.js?1608311739"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });

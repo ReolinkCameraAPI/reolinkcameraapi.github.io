@@ -8,13 +8,24 @@ tags: ["getting started", "installation", "contributing"]
 
 ## Installation
 
-### From source
-
-    git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git
+If `go get` is not working for you, please check out this amazing post about 
+`GO111MODULE=ON` [here](https://dev.to/maelvls/why-is-go111module-everywhere-and-everything-about-go-modules-24k).
 
 ### Using go get
 
-    go get -u github.com/ReolinkCameraAPI/reolinkapigo
+    GO111MODULE=on go get github.com/ReolinkCameraAPI/reolinkapigo@latest
+
+A Specific version using `@v0.x.x`
+
+    GO111MODULE=on go get -u github.com/ReolinkCameraAPI/reolinkapigo@v0.0.1
+
+
+### From source
+
+    cd $GOPATH
+    mkdir -p src/github.com/ReolinkCameraAPI
+    cd src/github.com/ReolinkCameraAPI
+    git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git
 
 ## Using
 
@@ -29,4 +40,4 @@ commands.
 	camera, err := pkg.NewCamera("foo", "bar", "192.168.1.100")
 
     // now call any of the supported api's by passing it it's resthandler
-    ok, err := camera.API.FormatHdd(0)(camera.RestHandler)
+    ok, err := camera.FormatHdd(0)(camera.RestHandler)
