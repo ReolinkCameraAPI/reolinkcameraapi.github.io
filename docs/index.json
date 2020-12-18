@@ -1,28 +1,84 @@
 [
 {
+	"uri": "https://reolink.oleaintueri.com/reolink-go/getting-started/",
+	"title": "Getting Started",
+	"tags": ["getting started", "installation", "contributing"],
+	"description": "",
+	"content": "Installation From source git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git  Using go get go get -u github.com/ReolinkCameraAPI/reolinkapigo  Using Implement a \u0026ldquo;Camera\u0026rdquo; object by passing it an IP address, Username and Password. By instantiating the object, it will try retrieve a login token from the Reolink Camera. This token is necessary to interact with the Camera using other commands.\nimport \u0026quot;github.com/ReolinkCameraApi/reolinkapigo\u0026quot; // This can throw an error due to the API trying to authorise with the camera // to retrieve the necessary token for future requests. camera, err := pkg.NewCamera(\u0026quot;foo\u0026quot;, \u0026quot;bar\u0026quot;, \u0026quot;192.168.1.100\u0026quot;) // now call any of the supported api's by passing it it's resthandler ok, err := camera.API.FormatHdd(0)(camera.RestHandler)  "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/documentation/",
+	"title": "Documentation",
+	"tags": [],
+	"description": "",
+	"content": "Documentation Repository The documentation repository is for documenting all of our projects written inside the Reolink Camera API organisation. If you see anything missing, please feel free to contribute to it.\nWe use a Hugo theme called \u0026ldquo;Learn\u0026rdquo; for the documentation generation. Everything is written in Markdown files.\nhttps://themes.gohugo.io//theme/hugo-theme-learn/en\nStep 1 Create a new issue on the documentation repository which can be found here.\nStep 2 Fork the repository.\nStep 3 Open a pull request and we will add the changes.\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/reolink-python/getting-started/",
+	"title": "Getting Started",
+	"tags": ["getting started", "installation", "contributing"],
+	"description": "",
+	"content": "Installation Via Pip Install the package via Pip\npip install reolink-api==0.0.5  From GitHub Install the package directly from GitHub\npip install git+https://github.com/ReolinkCameraAPI/reolink-python-api.git   Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/reolink-python/styling-guide/",
+	"title": "Styling Guide",
+	"tags": ["styling", "PEP8"],
+	"description": "",
+	"content": "This project intends to stick with PEP8\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
 	"uri": "https://reolink.oleaintueri.com/reolink-python/",
 	"title": "Reolink Python",
 	"tags": [],
 	"description": "",
-	"content": "Python Api Client The Python client attempts to write a comprehensive Reolink Camera api client.\n"
+	"content": "Python Api Client    A Reolink Camera client written in Python. This repository\u0026rsquo;s purpose (with Reolink\u0026rsquo;s full support) is to deliver a complete API for the Reolink Cameras, although they have a basic API document - it does not satisfy the need for extensive camera communication.\nOther supported languages: reolinkapigo\n\u0026gt; Getting Started \u0026gt; Styling Guide  Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/reolink-python/contributing/",
+	"title": "Contributing",
+	"tags": ["contributing"],
+	"description": "",
+	"content": "We invite contributions to the project and would love to hear your ideas. If you uncertain about if a certain feature would be appreciated, please create an issue. This way we can be notified of any changes you would like to make.\nThe library uses a simple technique to get the API calls made by the Reolink cameras' Web UI to the cameras built-in web server. We just extract these calls by looking through the browsers' console.\nTo get started with the revers engineering process, follow the steps below.\nStep 1 Get the Restful API calls by looking through the HTTP Requests made in the cameras' web UI.\nIn Chrome and Firefox Google Chrome developer mode (ctr + shift + i) -\u0026gt; Network.\nStep 2 Fork the repository and make your changes.\nStep 3 Make a pull request.\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
 },
 {
 	"uri": "https://reolink.oleaintueri.com/reolink-go/",
 	"title": "Reolink Go",
 	"tags": [],
 	"description": "",
-	"content": "Go Api Client Lorem Ipsum.\n"
+	"content": "Go Api Client A Reolink Camera client written in Go. This repository\u0026rsquo;s purpose (with Reolink\u0026rsquo;s full support) is to deliver a complete API for the Reolink Cameras, although they have a basic API document - it does not satisfy the need for extensive camera communication.\nCheck out our documentation for more information on how to use the software at https://reolink.oleaintueri.com\nOther Supported Languages: reolink-python-api\nThe reolink-go-api project is the go alternative to the reolink-python-api project. It provides the same functionality, but just in pure Go.\nThis repository is untested and might have breaking future changes.\n  Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/reolink-python/examples/",
+	"title": "Examples",
+	"tags": ["examples"],
+	"description": "",
+	"content": "We will try give as many examples as possible. If you see an example is missing, please feel free to contribute to the docs! \u0026gt; Video Streaming  Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
 },
 {
 	"uri": "https://reolink.oleaintueri.com/",
 	"title": "",
 	"tags": [],
 	"description": "",
-	"content": "The Unofficial Reolink Camera Api client documentation.  Goal This websites' goal is to inform those wanting to implement and use the set of tools provided by the ReolinkCameraApi organisation.\n "
+	"content": "Hi there! 👋 Welcome to the unofficial reolink camera api 😄\nWe hope that this documentation site will help you in your endeavour of building nice tools on top of our libraries. We are hoping to build a set of tools and software that would help you out in your hobby/work/curiosity.\nThe work presented here has all been open sourced and will stay open source. It all started with a little side project reolink-python-api in the hopes that it would reach and help others' out there. This certainly came true and now I intend to expand the project into multiple components, spanning (currently) two different languages, namely golang and python.\nWith the support of Reolink (yes the company) and Oleaintueri (my organiation) I will hopefully give some open source solutions to the problems faced in the community currently.\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
 },
 {
-	"uri": "https://reolink.oleaintueri.com/categories/",
-	"title": "Categories",
+	"uri": "https://reolink.oleaintueri.com/tags/go-standards/",
+	"title": "go standards",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/reolink-go/styling-guide/",
+	"title": "Styling Guide",
+	"tags": ["styling guide", "go standards"],
+	"description": "",
+	"content": "Styling and Standards Golang project structure based off of https://github.com/golang-standards/project-layout\nWriting functions/structs with a lot of parameters\nfunction HasManyParameters( param1 string, param2 int, param3 bool, ... param100 *Foo, ) { // Write your code here }  All variables are camelCase\nvar someVariable1 string  Package names are all lowercase and if two or more words, camelCase\npackage foo package fooBar  Go files are lowercase and if two or more words, snake_case\nfoo.go foo_bar.go  "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/styling-guide/",
+	"title": "styling guide",
 	"tags": [],
 	"description": "",
 	"content": ""
@@ -30,6 +86,76 @@
 {
 	"uri": "https://reolink.oleaintueri.com/tags/",
 	"title": "Tags",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/contributing/",
+	"title": "contributing",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/getting-started/",
+	"title": "getting started",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/installation/",
+	"title": "installation",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/rtsp/",
+	"title": "rtsp",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/reolink-python/examples/examples-streaming/",
+	"title": "Video Streaming",
+	"tags": ["video streaming", "rtsp"],
+	"description": "",
+	"content": "This example opens the cameras' RTSP stream and displays it in an OpenCV window\nimport cv2 from Camera import Camera def non_blocking(): print(\u0026quot;calling non-blocking\u0026quot;) def inner_callback(img): cv2.imshow(\u0026quot;name\u0026quot;, maintain_aspect_ratio_resize(img, width=600)) print(\u0026quot;got the image non-blocking\u0026quot;) key = cv2.waitKey(1) if key == ord('q'): cv2.destroyAllWindows() exit(1) c = Camera(\u0026quot;192.168.1.112\u0026quot;, \u0026quot;admin\u0026quot;, \u0026quot;jUa2kUzi\u0026quot;) # t in this case is a thread t = c.open_video_stream(callback=inner_callback) print(t.is_alive()) while True: if not t.is_alive(): print(\u0026quot;continuing\u0026quot;) break # stop the stream # client.stop_stream() def blocking(): c = Camera(\u0026quot;192.168.1.112\u0026quot;, \u0026quot;admin\u0026quot;, \u0026quot;jUa2kUzi\u0026quot;) # stream in this case is a generator returning an image (in mat format) stream = c.open_video_stream() # using next() # while True: # img = next(stream) # cv2.imshow(\u0026quot;name\u0026quot;, maintain_aspect_ratio_resize(img, width=600)) # print(\u0026quot;got the image blocking\u0026quot;) # key = cv2.waitKey(1) # if key == ord('q'): # cv2.destroyAllWindows() # exit(1) # or using a for loop for img in stream: cv2.imshow(\u0026quot;name\u0026quot;, maintain_aspect_ratio_resize(img, width=600)) print(\u0026quot;got the image blocking\u0026quot;) key = cv2.waitKey(1) if key == ord('q'): cv2.destroyAllWindows() exit(1) # Resizes a image and maintains aspect ratio def maintain_aspect_ratio_resize(image, width=None, height=None, inter=cv2.INTER_AREA): # Grab the image size and initialize dimensions dim = None (h, w) = image.shape[:2] # Return original image if no need to resize if width is None and height is None: return image # We are resizing height if width is none if width is None: # Calculate the ratio of the height and construct the dimensions r = height / float(h) dim = (int(w * r), height) # We are resizing width if height is none else: # Calculate the ratio of the 0idth and construct the dimensions r = width / float(w) dim = (width, int(h * r)) # Return the resized image return cv2.resize(image, dim, interpolation=inter) # Call the methods. Either Blocking (using generator) or Non-Blocking using threads # non_blocking() blocking()   Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/video-streaming/",
+	"title": "video streaming",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/examples/",
+	"title": "examples",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/pep8/",
+	"title": "PEP8",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/tags/styling/",
+	"title": "styling",
+	"tags": [],
+	"description": "",
+	"content": ""
+},
+{
+	"uri": "https://reolink.oleaintueri.com/categories/",
+	"title": "Categories",
 	"tags": [],
 	"description": "",
 	"content": ""

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>styling on ReolinkApi Docs</title>
+    <link>https://reolink.oleaintueri.com/tags/styling/</link>
+    <description>Recent content in styling on ReolinkApi Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 01:50:50 +0200</lastBuildDate><atom:link href="https://reolink.oleaintueri.com/tags/styling/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Styling Guide</title>
+      <link>https://reolink.oleaintueri.com/reolink-python/styling-guide/</link>
+      <pubDate>Fri, 18 Dec 2020 01:50:50 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-python/styling-guide/</guid>
+      <description>This project intends to stick with PEP8
+ Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   </description>
+    </item>
+    
+  </channel>
+</rss>

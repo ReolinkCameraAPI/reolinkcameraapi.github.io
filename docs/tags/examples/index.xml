@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>examples on ReolinkApi Docs</title>
+    <link>https://reolink.oleaintueri.com/tags/examples/</link>
+    <description>Recent content in examples on ReolinkApi Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 02:01:41 +0200</lastBuildDate><atom:link href="https://reolink.oleaintueri.com/tags/examples/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Examples</title>
+      <link>https://reolink.oleaintueri.com/reolink-python/examples/</link>
+      <pubDate>Fri, 18 Dec 2020 02:01:41 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-python/examples/</guid>
+      <description>We will try give as many examples as possible. If you see an example is missing, please feel free to contribute to the docs! &amp;gt; Video Streaming  Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   </description>
+    </item>
+    
+  </channel>
+</rss>

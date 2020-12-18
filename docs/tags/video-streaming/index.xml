@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>video streaming on ReolinkApi Docs</title>
+    <link>https://reolink.oleaintueri.com/tags/video-streaming/</link>
+    <description>Recent content in video streaming on ReolinkApi Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 02:02:37 +0200</lastBuildDate><atom:link href="https://reolink.oleaintueri.com/tags/video-streaming/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Video Streaming</title>
+      <link>https://reolink.oleaintueri.com/reolink-python/examples/examples-streaming/</link>
+      <pubDate>Fri, 18 Dec 2020 02:02:37 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-python/examples/examples-streaming/</guid>
+      <description>This example opens the cameras&#39; RTSP stream and displays it in an OpenCV window
+import cv2 from Camera import Camera def non_blocking(): print(&amp;quot;calling non-blocking&amp;quot;) def inner_callback(img): cv2.imshow(&amp;quot;name&amp;quot;, maintain_aspect_ratio_resize(img, width=600)) print(&amp;quot;got the image non-blocking&amp;quot;) key = cv2.waitKey(1) if key == ord(&#39;q&#39;): cv2.destroyAllWindows() exit(1) c = Camera(&amp;quot;192.168.1.112&amp;quot;, &amp;quot;admin&amp;quot;, &amp;quot;jUa2kUzi&amp;quot;) # t in this case is a thread t = c.open_video_stream(callback=inner_callback) print(t.is_alive()) while True: if not t.is_alive(): print(&amp;quot;continuing&amp;quot;) break # stop the stream # client.</description>
+    </item>
+    
+  </channel>
+</rss>

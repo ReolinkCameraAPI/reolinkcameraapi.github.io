@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>contributing on ReolinkApi Docs</title>
+    <link>https://reolink.oleaintueri.com/tags/contributing/</link>
+    <description>Recent content in contributing on ReolinkApi Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 03:54:48 +0200</lastBuildDate><atom:link href="https://reolink.oleaintueri.com/tags/contributing/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting Started</title>
+      <link>https://reolink.oleaintueri.com/reolink-go/getting-started/</link>
+      <pubDate>Fri, 18 Dec 2020 03:54:48 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-go/getting-started/</guid>
+      <description>Installation From source git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git  Using go get go get -u github.com/ReolinkCameraAPI/reolinkapigo  Using Implement a &amp;ldquo;Camera&amp;rdquo; object by passing it an IP address, Username and Password. By instantiating the object, it will try retrieve a login token from the Reolink Camera. This token is necessary to interact with the Camera using other commands.
+import &amp;quot;github.com/ReolinkCameraApi/reolinkapigo&amp;quot; // This can throw an error due to the API trying to authorise with the camera // to retrieve the necessary token for future requests.</description>
+    </item>
+    
+    <item>
+      <title>Getting Started</title>
+      <link>https://reolink.oleaintueri.com/reolink-python/getting-started/</link>
+      <pubDate>Thu, 17 Dec 2020 18:37:15 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-python/getting-started/</guid>
+      <description>Installation Via Pip Install the package via Pip
+pip install reolink-api==0.0.5  From GitHub Install the package directly from GitHub
+pip install git+https://github.com/ReolinkCameraAPI/reolink-python-api.git   Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   </description>
+    </item>
+    
+    <item>
+      <title>Contributing</title>
+      <link>https://reolink.oleaintueri.com/reolink-python/contributing/</link>
+      <pubDate>Fri, 18 Dec 2020 01:54:28 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-python/contributing/</guid>
+      <description>We invite contributions to the project and would love to hear your ideas. If you uncertain about if a certain feature would be appreciated, please create an issue. This way we can be notified of any changes you would like to make.
+The library uses a simple technique to get the API calls made by the Reolink cameras&#39; Web UI to the cameras built-in web server. We just extract these calls by looking through the browsers&#39; console.</description>
+    </item>
+    
+  </channel>
+</rss>

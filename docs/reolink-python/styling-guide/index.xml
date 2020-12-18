@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Styling Guide on ReolinkApi Docs</title>
+    <link>https://reolink.oleaintueri.com/reolink-python/styling-guide/</link>
+    <description>Recent content in Styling Guide on ReolinkApi Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 01:50:50 +0200</lastBuildDate><atom:link href="https://reolink.oleaintueri.com/reolink-python/styling-guide/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>

@@ -5,12 +5,15 @@ title = "ReolinkApi Docs"
 description = "The Unofficial Reolink Api clients documentation for Python and Go."
 theme = "hugo-theme-learn"
 publishDir = "docs"
+enableGitInfo = true
+enableEmoji = true
 
 [outputs]
 home = [ "HTML", "JSON" ]
 
 # customise theme properties https://themes.gohugo.io//theme/hugo-theme-learn/en/basics/configuration/
 [params]
+showVisitedLinks = true
 disableLandingPageButton = false
 disableBreadcrumb = false
 disableNextPrev = true

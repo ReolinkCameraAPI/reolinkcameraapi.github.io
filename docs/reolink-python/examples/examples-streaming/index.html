@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" class="js csstransforms3d">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="Hugo 0.79.0" />
+    <meta name="description" content="">
+
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+<link rel="manifest" href="/images/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+<link rel="shortcut icon" href="/images/favicon.ico">
+<meta name="msapplication-TileColor" content="#00aba9">
+<meta name="msapplication-config" content="/static/images/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+
+    <title>Video Streaming :: ReolinkApi Docs</title>
+
+    
+    <link href="/css/nucleus.css?1608256819" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1608256819" rel="stylesheet">
+    <link href="/css/hybrid.css?1608256819" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1608256819" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1608256819" rel="stylesheet">
+    <link href="/css/auto-complete.css?1608256819" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1608256819" rel="stylesheet">
+    <link href="/css/theme.css?1608256819" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1608256819" rel="stylesheet">
+    
+    <link href="/css/theme-blue.css?1608256819" rel="stylesheet">
+    
+    
+
+    <script src="/js/jquery-3.3.1.min.js?1608256819"></script>
+
+    <style>
+      :root #header + #content > #left > #rlblock_left{
+          display:none !important;
+      }
+      
+    </style>
+    
+  </head>
+  <body class="" data-url="/reolink-python/examples/examples-streaming/">
+    <nav id="sidebar" class="showVisitedLinks">
+
+
+
+  <div id="header-wrapper">
+    <div id="header">
+      <img src="/images/logo.png" alt="reolinkapi logo"/>
+
+    </div>
+    
+        <div class="searchbox">
+    <label for="search-by"><i class="fas fa-search"></i></label>
+    <input data-search-input id="search-by" type="search" placeholder="Search...">
+    <span data-search-clear=""><i class="fas fa-times"></i></span>
+</div>
+
+<script type="text/javascript" src="/js/lunr.min.js?1608256819"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1608256819"></script>
+<script type="text/javascript">
+    
+        var baseurl = "https:\/\/reolink.oleaintueri.com\/";
+    
+</script>
+<script type="text/javascript" src="/js/search.js?1608256819"></script>
+
+    
+  </div>
+  
+    <section id="homelinks">
+      <ul>
+        <li>
+            <a class="padding" href='/'><i class='fas fa-home'></i> Home</a>
+        </li>
+      </ul>
+    </section>
+  
+
+    <div class="highlightable">
+    <ul class="topics">
+
+        
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/documentation/" title="Documentation" class="dd-item
+        
+        
+        
+        ">
+      <a href="/documentation/">
+          <b></b>Documentation
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-python/" title="Reolink Python" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/reolink-python/">
+          <b></b>Reolink Python
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-python/getting-started/" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reolink-python/getting-started/">
+          Getting Started
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-python/styling-guide/" title="Styling Guide" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reolink-python/styling-guide/">
+          Styling Guide
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-python/contributing/" title="Contributing" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reolink-python/contributing/">
+          Contributing
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-python/examples/" title="Examples" class="dd-item
+        parent
+        
+        
+        ">
+      <a href="/reolink-python/examples/">
+          Examples
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+      <li data-nav-id="/reolink-python/examples/examples-streaming/" title="Video Streaming" class="dd-item active">
+        <a href="/reolink-python/examples/examples-streaming/">
+        Video Streaming
+        <i class="fas fa-check read-icon"></i>
+        </a>
+    </li>
+     
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+          
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-go/" title="Reolink Go" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reolink-go/">
+          <b></b>Reolink Go
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+        <ul>
+          
+          
+            
+          
+          
+
+        
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-go/getting-started/" title="Getting Started" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reolink-go/getting-started/">
+          Getting Started
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+            
+            
+
+
+
+
+ 
+  
+    
+    <li data-nav-id="/reolink-go/styling-guide/" title="Styling Guide" class="dd-item
+        
+        
+        
+        ">
+      <a href="/reolink-go/styling-guide/">
+          Styling Guide
+          
+            <i class="fas fa-check read-icon"></i>
+          
+      </a>
+      
+      
+    </li>
+  
+ 
+
+            
+          
+        
+        </ul>
+      
+    </li>
+  
+ 
+
+          
+        
+    </ul>
+
+    
+    
+
+    
+    <section id="prefooter">
+      <hr/>
+      <ul>
+      
+
+      
+        <li><a class="padding" href="#" data-clear-history-toggle=""><i class="fas fa-history fa-fw"></i> Clear History</a></li>
+      
+      </ul>
+    </section>
+    
+    <section id="footer">
+      <p>Built with <a href="https://github.com/matcornic/hugo-theme-learn"><i class="fas fa-heart"></i></a> from <a href="https://getgrav.org">Grav</a> and <a href="https://gohugo.io/">Hugo</a></p>
+
+    </section>
+  </div>
+</nav>
+
+
+
+
+        <section id="body">
+        <div id="overlay"></div>
+        <div class="padding highlightable">
+              
+              <div>
+                <div id="top-bar">
+                
+                
+                <div id="breadcrumbs" itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+                    <span id="sidebar-toggle-span">
+                        <a href="#" id="sidebar-toggle" data-sidebar-toggle="">
+                          <i class="fas fa-bars"></i>
+                        </a>
+                    </span>
+                  
+                  <span id="toc-menu"><i class="fas fa-list-alt"></i></span>
+                  
+                  <span class="links">
+                 
+                 
+                    
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'></a> > <a href='/reolink-python/'>Reolink Python</a> > <a href='/reolink-python/examples/'>Examples</a> > Video Streaming
+          
+        
+          
+        
+          
+        
+          
+        
+                 
+                  </span>
+                </div>
+                
+                    <div class="progress">
+    <div class="wrapper">
+<nav id="TableOfContents"></nav>
+    </div>
+</div>
+
+                
+              </div>
+            </div>
+            
+        <div id="head-tags">
+        
+<div class="tags">
+
+  <a class="tag-link" href="/tags/video-streaming">video streaming</a>
+
+  <a class="tag-link" href="/tags/rtsp">rtsp</a>
+
+</div>
+
+        </div>
+        
+        <div id="body-inner">
+          
+            <h1>
+              
+              Video Streaming
+            </h1>
+          
+
+        
+
+
+<p>This example opens the cameras' RTSP stream and displays it in an OpenCV window</p>
+<pre><code>import cv2
+
+from Camera import Camera
+
+
+def non_blocking():
+print(&quot;calling non-blocking&quot;)
+
+    def inner_callback(img):
+        cv2.imshow(&quot;name&quot;, maintain_aspect_ratio_resize(img, width=600))
+        print(&quot;got the image non-blocking&quot;)
+        key = cv2.waitKey(1)
+        if key == ord('q'):
+            cv2.destroyAllWindows()
+            exit(1)
+
+    c = Camera(&quot;192.168.1.112&quot;, &quot;admin&quot;, &quot;jUa2kUzi&quot;)
+    # t in this case is a thread
+    t = c.open_video_stream(callback=inner_callback)
+
+    print(t.is_alive())
+    while True:
+        if not t.is_alive():
+            print(&quot;continuing&quot;)
+            break
+        # stop the stream
+        # client.stop_stream()
+
+
+def blocking():
+c = Camera(&quot;192.168.1.112&quot;, &quot;admin&quot;, &quot;jUa2kUzi&quot;)
+# stream in this case is a generator returning an image (in mat format)
+stream = c.open_video_stream()
+
+    # using next()
+    # while True:
+    #     img = next(stream)
+    #     cv2.imshow(&quot;name&quot;, maintain_aspect_ratio_resize(img, width=600))
+    #     print(&quot;got the image blocking&quot;)
+    #     key = cv2.waitKey(1)
+    #     if key == ord('q'):
+    #         cv2.destroyAllWindows()
+    #         exit(1)
+
+    # or using a for loop
+    for img in stream:
+        cv2.imshow(&quot;name&quot;, maintain_aspect_ratio_resize(img, width=600))
+        print(&quot;got the image blocking&quot;)
+        key = cv2.waitKey(1)
+        if key == ord('q'):
+            cv2.destroyAllWindows()
+            exit(1)
+
+
+# Resizes a image and maintains aspect ratio
+def maintain_aspect_ratio_resize(image, width=None, height=None, inter=cv2.INTER_AREA):
+# Grab the image size and initialize dimensions
+dim = None
+(h, w) = image.shape[:2]
+
+    # Return original image if no need to resize
+    if width is None and height is None:
+        return image
+
+    # We are resizing height if width is none
+    if width is None:
+        # Calculate the ratio of the height and construct the dimensions
+        r = height / float(h)
+        dim = (int(w * r), height)
+    # We are resizing width if height is none
+    else:
+        # Calculate the ratio of the 0idth and construct the dimensions
+        r = width / float(w)
+        dim = (width, int(h * r))
+
+    # Return the resized image
+    return cv2.resize(image, dim, interpolation=inter)
+
+
+# Call the methods. Either Blocking (using generator) or Non-Blocking using threads
+# non_blocking()
+blocking()
+</code></pre>
+<div style="padding-top: 100px">
+<hr/>
+<h3 align="center">Sponsorship</h3>
+
+<a href="https://oleaintueri.com">
+    <img alt="olive" src="/images/oliv.svg?width=80px"/><img alt="oleaintueri" src="/images/oleaintueri.svg?width=150px"/>
+</a>
+
+<p align="center">
+    <a href="https://oleaintueri.com">Oleaintueri</a> is sponsoring the development and maintenance of these projects within their organisation.
+</p>
+
+<hr/>
+</div>
+
+
+
+<footer class="footline">
+	
+</footer>
+
+        
+        </div>
+        
+
+      </div>
+
+    <div id="navigation">
+        
+        
+
+        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                        
+                        
+                    
+                
+                
+
+                    
+                    
+                        
+                    
+                    
+
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+                        
+            
+            
+                
+                    
+                
+                
+
+                    
+                    
+                    
+
+                    
+            
+        
+                    
+            
+        
+                    
+            
+        
+
+        
+
+
+	 
+	 
+    </div>
+
+    </section>
+
+    <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
+      <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
+    </div>
+    <script src="/js/clipboard.min.js?1608256819"></script>
+    <script src="/js/perfect-scrollbar.min.js?1608256819"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1608256819"></script>
+    <script src="/js/jquery.sticky.js?1608256819"></script>
+    <script src="/js/featherlight.min.js?1608256819"></script>
+    <script src="/js/highlight.pack.js?1608256819"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script src="/js/modernizr.custom-3.6.0.js?1608256819"></script>
+    <script src="/js/learn.js?1608256819"></script>
+    <script src="/js/hugo-learn.js?1608256819"></script>
+    
+        
+            <script src="/mermaid/mermaid.js?1608256819"></script>
+        
+        <script>
+            mermaid.initialize({ startOnLoad: true });
+        </script>
+    
+    
+
+  </body>
+</html>
+

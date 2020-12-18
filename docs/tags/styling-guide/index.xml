@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>styling guide on ReolinkApi Docs</title>
+    <link>https://reolink.oleaintueri.com/tags/styling-guide/</link>
+    <description>Recent content in styling guide on ReolinkApi Docs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 18 Dec 2020 03:59:35 +0200</lastBuildDate><atom:link href="https://reolink.oleaintueri.com/tags/styling-guide/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Styling Guide</title>
+      <link>https://reolink.oleaintueri.com/reolink-go/styling-guide/</link>
+      <pubDate>Fri, 18 Dec 2020 03:59:35 +0200</pubDate>
+      
+      <guid>https://reolink.oleaintueri.com/reolink-go/styling-guide/</guid>
+      <description>Styling and Standards Golang project structure based off of https://github.com/golang-standards/project-layout
+Writing functions/structs with a lot of parameters
+function HasManyParameters( param1 string, param2 int, param3 bool, ... param100 *Foo, ) { // Write your code here }  All variables are camelCase
+var someVariable1 string  Package names are all lowercase and if two or more words, camelCase
+package foo package fooBar  Go files are lowercase and if two or more words, snake_case</description>
+    </item>
+    
+  </channel>
+</rss>
