@@ -33,7 +33,7 @@ Implement a "Camera" object by passing it an IP address, Username and Password. 
 retrieve a login token from the Reolink Camera. This token is necessary to interact with the Camera using other
 commands.
 
-    import "github.com/ReolinkCameraApi/reolinkapigo"
+    import "github.com/ReolinkCameraAPI/reolinkapigo"
 
     // This can throw an error due to the API trying to authorise with the camera
     // to retrieve the necessary token for future requests.

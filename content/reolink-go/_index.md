@@ -11,6 +11,10 @@ LastModifierEmail = "alano@oleaintueri.com"
 
 # Go Api Client
 
+{{% notice note %}}
+This repository is untested and might have breaking future changes.
+{{% /notice %}}
+
 A Reolink Camera client written in Go. This repository's
 purpose **(with Reolink's full support)** is to deliver a
 complete API for the Reolink Cameras,
@@ -23,9 +27,5 @@ Other Supported Languages: [reolink-python-api](https://github.com/ReolinkCamera
 
 The reolink-go-api project is the go alternative to the reolink-python-api project. It provides the same functionality,
 but just in pure Go.
-
-{{% notice note %}}
-This repository is untested and might have breaking future changes.
-{{% /notice %}}
 
 {{< sponsor >}}

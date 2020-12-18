@@ -18,7 +18,7 @@
 <meta name="theme-color" content="#ffffff">
 
 
-    <title>Styling Guide :: ReolinkApi Docs</title>
+    <title>Getting Started :: ReolinkApi Docs</title>
 
     
     <link href="/css/nucleus.css?1608312441" rel="stylesheet">
@@ -45,7 +45,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/reolink-go/styling-guide/">
+  <body class="" data-url="/noctiluca/getting-started/">
     <nav id="sidebar" class="showVisitedLinks">
 
 
@@ -304,7 +304,7 @@
   
     
     <li data-nav-id="/reolink-go/" title="Reolink Go" class="dd-item
-        parent
+        
         
         
         ">
@@ -363,8 +363,8 @@
   
     
     <li data-nav-id="/reolink-go/styling-guide/" title="Styling Guide" class="dd-item
-        parent
-        active
+        
+        
         
         ">
       <a href="/reolink-go/styling-guide/">
@@ -398,7 +398,7 @@
   
     
     <li data-nav-id="/noctiluca/" title="Noctiluca" class="dd-item
-        
+        parent
         
         
         ">
@@ -429,8 +429,8 @@
   
     
     <li data-nav-id="/noctiluca/getting-started/" title="Getting Started" class="dd-item
-        
-        
+        parent
+        active
         
         ">
       <a href="/noctiluca/getting-started/">
@@ -514,7 +514,7 @@
             
           
           
-            <a href='/'></a> > <a href='/reolink-go/'>Reolink Go</a> > Styling Guide
+            <a href='/'></a> > <a href='/noctiluca/'>Noctiluca</a> > Getting Started
           
         
           
@@ -527,15 +527,7 @@
                 
                     <div class="progress">
     <div class="wrapper">
-<nav id="TableOfContents">
-  <ul>
-    <li>
-      <ul>
-        <li><a href="#styling-and-standards">Styling and Standards</a></li>
-      </ul>
-    </li>
-  </ul>
-</nav>
+<nav id="TableOfContents"></nav>
     </div>
 </div>
 
@@ -545,21 +537,13 @@
             
         <div id="head-tags">
         
-<div class="tags">
-
-  <a class="tag-link" href="/tags/styling-guide">styling guide</a>
-
-  <a class="tag-link" href="/tags/go-standards">go standards</a>
-
-</div>
-
         </div>
         
         <div id="body-inner">
           
             <h1>
               
-              Styling Guide
+              Getting Started
             </h1>
           
 
@@ -567,30 +551,24 @@
 
 
 
-	<h3 id="styling-and-standards">Styling and Standards</h3>
-<p>Golang project structure based off of <a href="https://github.com/golang-standards/project-layout">https://github.com/golang-standards/project-layout</a></p>
-<p>Writing functions/structs with a lot of parameters</p>
-<pre><code>function HasManyParameters(
-        param1 string,
-        param2 int,
-        param3 bool,
-        ...
-        param100 *Foo,
-) {
-   // Write your code here
-}
-</code></pre>
-<p>All variables are camelCase</p>
-<pre><code>var someVariable1 string
-</code></pre>
-<p>Package names are all lowercase and if two or more words, camelCase</p>
-<pre><code>package foo
-package fooBar
-</code></pre>
-<p>Go files are lowercase and if two or more words, snake_case</p>
-<pre><code>foo.go
-foo_bar.go
-</code></pre>
+	<p>Since there are two parts to this project (a frontend and a server), one needs to decide how
+you are going to deploy each part. The backend is quite easy since it already ships with docker
+and just needs a bit of configuring to get it running.</p>
+<div style="padding-top: 100px">
+<hr/>
+<h3 align="center">Sponsorship</h3>
+
+<a href="https://oleaintueri.com">
+    <img alt="olive" src="/images/oliv.svg?width=80px"/><img alt="oleaintueri" src="/images/oleaintueri.svg?width=150px"/>
+</a>
+
+<p align="center">
+    <a href="https://oleaintueri.com">Oleaintueri</a> is sponsoring the development and maintenance of these projects within their organisation.
+</p>
+
+<hr/>
+</div>
+
 
 
 
@@ -748,7 +726,6 @@ foo_bar.go
             
                 
                     
-                    
                 
                 
 
@@ -763,9 +740,6 @@ foo_bar.go
             
             
                 
-                    
-                        
-                        
                     
                 
                 
@@ -782,7 +756,6 @@ foo_bar.go
             
             
                 
-                    
                     
                 
                 
@@ -803,8 +776,6 @@ foo_bar.go
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -820,6 +791,7 @@ foo_bar.go
             
             
                 
+                    
                     
                 
                 

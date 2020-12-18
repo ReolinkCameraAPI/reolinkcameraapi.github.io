@@ -4,7 +4,7 @@
 	"title": "Getting Started",
 	"tags": ["getting started", "installation", "contributing"],
 	"description": "",
-	"content": "Installation If go get is not working for you, please check out this amazing post about GO111MODULE=ON here.\nUsing go get GO111MODULE=on go get github.com/ReolinkCameraAPI/reolinkapigo@latest  A Specific version using @v0.x.x\nGO111MODULE=on go get -u github.com/ReolinkCameraAPI/reolinkapigo@v0.0.1  From source cd $GOPATH mkdir -p src/github.com/ReolinkCameraAPI cd src/github.com/ReolinkCameraAPI git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git  Using Implement a \u0026ldquo;Camera\u0026rdquo; object by passing it an IP address, Username and Password. By instantiating the object, it will try retrieve a login token from the Reolink Camera. This token is necessary to interact with the Camera using other commands.\nimport \u0026quot;github.com/ReolinkCameraApi/reolinkapigo\u0026quot; // This can throw an error due to the API trying to authorise with the camera // to retrieve the necessary token for future requests. camera, err := pkg.NewCamera(\u0026quot;foo\u0026quot;, \u0026quot;bar\u0026quot;, \u0026quot;192.168.1.100\u0026quot;) // now call any of the supported api's by passing it it's resthandler ok, err := camera.FormatHdd(0)(camera.RestHandler)  "
+	"content": "Installation If go get is not working for you, please check out this amazing post about GO111MODULE=ON here.\nUsing go get GO111MODULE=on go get github.com/ReolinkCameraAPI/reolinkapigo@latest  A Specific version using @v0.x.x\nGO111MODULE=on go get -u github.com/ReolinkCameraAPI/reolinkapigo@v0.0.1  From source cd $GOPATH mkdir -p src/github.com/ReolinkCameraAPI cd src/github.com/ReolinkCameraAPI git clone https://github.com/ReolinkCameraAPI/reolinkapigo.git  Using Implement a \u0026ldquo;Camera\u0026rdquo; object by passing it an IP address, Username and Password. By instantiating the object, it will try retrieve a login token from the Reolink Camera. This token is necessary to interact with the Camera using other commands.\nimport \u0026quot;github.com/ReolinkCameraAPI/reolinkapigo\u0026quot; // This can throw an error due to the API trying to authorise with the camera // to retrieve the necessary token for future requests. camera, err := pkg.NewCamera(\u0026quot;foo\u0026quot;, \u0026quot;bar\u0026quot;, \u0026quot;192.168.1.100\u0026quot;) // now call any of the supported api's by passing it it's resthandler ok, err := camera.FormatHdd(0)(camera.RestHandler)  "
 },
 {
 	"uri": "https://reolink.oleaintueri.com/documentation/",
@@ -46,7 +46,14 @@
 	"title": "Reolink Go",
 	"tags": [],
 	"description": "",
-	"content": "Go Api Client A Reolink Camera client written in Go. This repository\u0026rsquo;s purpose (with Reolink\u0026rsquo;s full support) is to deliver a complete API for the Reolink Cameras, although they have a basic API document - it does not satisfy the need for extensive camera communication.\nCheck out our documentation for more information on how to use the software at https://reolink.oleaintueri.com\nOther Supported Languages: reolink-python-api\nThe reolink-go-api project is the go alternative to the reolink-python-api project. It provides the same functionality, but just in pure Go.\nThis repository is untested and might have breaking future changes.\n  Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+	"content": "Go Api Client This repository is untested and might have breaking future changes.\n A Reolink Camera client written in Go. This repository\u0026rsquo;s purpose (with Reolink\u0026rsquo;s full support) is to deliver a complete API for the Reolink Cameras, although they have a basic API document - it does not satisfy the need for extensive camera communication.\nCheck out our documentation for more information on how to use the software at https://reolink.oleaintueri.com\nOther Supported Languages: reolink-python-api\nThe reolink-go-api project is the go alternative to the reolink-python-api project. It provides the same functionality, but just in pure Go.\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/noctiluca/",
+	"title": "Noctiluca",
+	"tags": [],
+	"description": "",
+	"content": "NoctiLuca 🚧 Just a warning! this project is still under heavey development 🚧\nA powerful webapp to manage Reolink cameras on any platform. The NoctiLuca software package consists of a Vue frontend and a choice between Go or Python backend. Currently only Go is supported\n \u0026gt; Get Started  Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
 },
 {
 	"uri": "https://reolink.oleaintueri.com/reolink-python/examples/",
@@ -61,6 +68,13 @@
 	"tags": [],
 	"description": "",
 	"content": "Hi there! 👋 Welcome to the unofficial reolink camera api 😄\nWe hope that this documentation site will help you in your endeavour of building nice tools on top of our libraries. We are hoping to build a set of tools and software that would help you out in your hobby/work/curiosity.\nThe work presented here has all been open sourced and will stay open source. It all started with a little side project reolink-python-api in the hopes that it would reach and help others' out there. This certainly came true and now I intend to expand the project into multiple components, spanning (currently) two different languages, namely golang and python.\nWith the support of Reolink (yes the company) and Oleaintueri (my organiation) I will hopefully give some open source solutions to the problems faced in the community currently.\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
+},
+{
+	"uri": "https://reolink.oleaintueri.com/noctiluca/getting-started/",
+	"title": "Getting Started",
+	"tags": [],
+	"description": "",
+	"content": "Since there are two parts to this project (a frontend and a server), one needs to decide how you are going to deploy each part. The backend is quite easy since it already ships with docker and just needs a bit of configuring to get it running.\n Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   "
 },
 {
 	"uri": "https://reolink.oleaintueri.com/tags/go-standards/",
