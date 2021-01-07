@@ -21,21 +21,21 @@
     <title>Video Streaming :: ReolinkApi Docs</title>
 
     
-    <link href="/css/nucleus.css?1608312441" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1608312441" rel="stylesheet">
-    <link href="/css/hybrid.css?1608312441" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1608312441" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1608312441" rel="stylesheet">
-    <link href="/css/auto-complete.css?1608312441" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1608312441" rel="stylesheet">
-    <link href="/css/theme.css?1608312441" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1608312441" rel="stylesheet">
+    <link href="/css/nucleus.css?1610056864" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1610056864" rel="stylesheet">
+    <link href="/css/hybrid.css?1610056864" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1610056864" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1610056864" rel="stylesheet">
+    <link href="/css/auto-complete.css?1610056864" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1610056864" rel="stylesheet">
+    <link href="/css/theme.css?1610056864" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1610056864" rel="stylesheet">
     
-    <link href="/css/theme-blue.css?1608312441" rel="stylesheet">
+    <link href="/css/theme-blue.css?1610056864" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1608312441"></script>
+    <script src="/js/jquery-3.3.1.min.js?1610056864"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -62,14 +62,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1608312441"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1608312441"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1610056864"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1610056864"></script>
 <script type="text/javascript">
     
         var baseurl = "https:\/\/reolink.oleaintueri.com\/";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1608312441"></script>
+<script type="text/javascript" src="/js/search.js?1610056864"></script>
 
     
   </div>
@@ -565,90 +565,91 @@
 
 
 <p>This example opens the cameras' RTSP stream and displays it in an OpenCV window</p>
-<pre><code>import cv2
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">
+<span style="color:#f92672">import</span> cv2
 
-from Camera import Camera
-
-
-def non_blocking():
-print(&quot;calling non-blocking&quot;)
-
-    def inner_callback(img):
-        cv2.imshow(&quot;name&quot;, maintain_aspect_ratio_resize(img, width=600))
-        print(&quot;got the image non-blocking&quot;)
-        key = cv2.waitKey(1)
-        if key == ord('q'):
-            cv2.destroyAllWindows()
-            exit(1)
-
-    c = Camera(&quot;192.168.1.112&quot;, &quot;admin&quot;, &quot;jUa2kUzi&quot;)
-    # t in this case is a thread
-    t = c.open_video_stream(callback=inner_callback)
-
-    print(t.is_alive())
-    while True:
-        if not t.is_alive():
-            print(&quot;continuing&quot;)
-            break
-        # stop the stream
-        # client.stop_stream()
+<span style="color:#f92672">from</span> Camera <span style="color:#f92672">import</span> Camera
 
 
-def blocking():
-c = Camera(&quot;192.168.1.112&quot;, &quot;admin&quot;, &quot;jUa2kUzi&quot;)
-# stream in this case is a generator returning an image (in mat format)
-stream = c.open_video_stream()
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">non_blocking</span>():
+    <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;calling non-blocking&#34;</span>)
 
-    # using next()
-    # while True:
-    #     img = next(stream)
-    #     cv2.imshow(&quot;name&quot;, maintain_aspect_ratio_resize(img, width=600))
-    #     print(&quot;got the image blocking&quot;)
-    #     key = cv2.waitKey(1)
-    #     if key == ord('q'):
-    #         cv2.destroyAllWindows()
-    #         exit(1)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">inner_callback</span>(img):
+        cv2<span style="color:#f92672">.</span>imshow(<span style="color:#e6db74">&#34;name&#34;</span>, maintain_aspect_ratio_resize(img, width<span style="color:#f92672">=</span><span style="color:#ae81ff">600</span>))
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;got the image non-blocking&#34;</span>)
+        key <span style="color:#f92672">=</span> cv2<span style="color:#f92672">.</span>waitKey(<span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> ord(<span style="color:#e6db74">&#39;q&#39;</span>):
+            cv2<span style="color:#f92672">.</span>destroyAllWindows()
+            exit(<span style="color:#ae81ff">1</span>)
 
-    # or using a for loop
-    for img in stream:
-        cv2.imshow(&quot;name&quot;, maintain_aspect_ratio_resize(img, width=600))
-        print(&quot;got the image blocking&quot;)
-        key = cv2.waitKey(1)
-        if key == ord('q'):
-            cv2.destroyAllWindows()
-            exit(1)
+    c <span style="color:#f92672">=</span> Camera(<span style="color:#e6db74">&#34;192.168.1.112&#34;</span>, <span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;jUa2kUzi&#34;</span>)
+    <span style="color:#75715e"># t in this case is a thread</span>
+    t <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>open_video_stream(callback<span style="color:#f92672">=</span>inner_callback)
 
-
-# Resizes a image and maintains aspect ratio
-def maintain_aspect_ratio_resize(image, width=None, height=None, inter=cv2.INTER_AREA):
-# Grab the image size and initialize dimensions
-dim = None
-(h, w) = image.shape[:2]
-
-    # Return original image if no need to resize
-    if width is None and height is None:
-        return image
-
-    # We are resizing height if width is none
-    if width is None:
-        # Calculate the ratio of the height and construct the dimensions
-        r = height / float(h)
-        dim = (int(w * r), height)
-    # We are resizing width if height is none
-    else:
-        # Calculate the ratio of the 0idth and construct the dimensions
-        r = width / float(w)
-        dim = (width, int(h * r))
-
-    # Return the resized image
-    return cv2.resize(image, dim, interpolation=inter)
+    <span style="color:#66d9ef">print</span>(t<span style="color:#f92672">.</span>is_alive())
+    <span style="color:#66d9ef">while</span> True:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> t<span style="color:#f92672">.</span>is_alive():
+            <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;continuing&#34;</span>)
+            <span style="color:#66d9ef">break</span>
+        <span style="color:#75715e"># stop the stream</span>
+        <span style="color:#75715e"># client.stop_stream()</span>
 
 
-# Call the methods. Either Blocking (using generator) or Non-Blocking using threads
-# non_blocking()
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">blocking</span>():
+    c <span style="color:#f92672">=</span> Camera(<span style="color:#e6db74">&#34;192.168.1.112&#34;</span>, <span style="color:#e6db74">&#34;admin&#34;</span>, <span style="color:#e6db74">&#34;jUa2kUzi&#34;</span>)
+    <span style="color:#75715e"># stream in this case is a generator returning an image (in mat format)</span>
+    stream <span style="color:#f92672">=</span> c<span style="color:#f92672">.</span>open_video_stream()
+
+    <span style="color:#75715e"># using next()</span>
+    <span style="color:#75715e"># while True:</span>
+    <span style="color:#75715e">#     img = next(stream)</span>
+    <span style="color:#75715e">#     cv2.imshow(&#34;name&#34;, maintain_aspect_ratio_resize(img, width=600))</span>
+    <span style="color:#75715e">#     print(&#34;got the image blocking&#34;)</span>
+    <span style="color:#75715e">#     key = cv2.waitKey(1)</span>
+    <span style="color:#75715e">#     if key == ord(&#39;q&#39;):</span>
+    <span style="color:#75715e">#         cv2.destroyAllWindows()</span>
+    <span style="color:#75715e">#         exit(1)</span>
+
+    <span style="color:#75715e"># or using a for loop</span>
+    <span style="color:#66d9ef">for</span> img <span style="color:#f92672">in</span> stream:
+        cv2<span style="color:#f92672">.</span>imshow(<span style="color:#e6db74">&#34;name&#34;</span>, maintain_aspect_ratio_resize(img, width<span style="color:#f92672">=</span><span style="color:#ae81ff">600</span>))
+        <span style="color:#66d9ef">print</span>(<span style="color:#e6db74">&#34;got the image blocking&#34;</span>)
+        key <span style="color:#f92672">=</span> cv2<span style="color:#f92672">.</span>waitKey(<span style="color:#ae81ff">1</span>)
+        <span style="color:#66d9ef">if</span> key <span style="color:#f92672">==</span> ord(<span style="color:#e6db74">&#39;q&#39;</span>):
+            cv2<span style="color:#f92672">.</span>destroyAllWindows()
+            exit(<span style="color:#ae81ff">1</span>)
+
+
+<span style="color:#75715e"># Resizes a image and maintains aspect ratio</span>
+<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">maintain_aspect_ratio_resize</span>(image, width<span style="color:#f92672">=</span>None, height<span style="color:#f92672">=</span>None, inter<span style="color:#f92672">=</span>cv2<span style="color:#f92672">.</span>INTER_AREA):
+    <span style="color:#75715e"># Grab the image size and initialize dimensions</span>
+    dim <span style="color:#f92672">=</span> None
+    (h, w) <span style="color:#f92672">=</span> image<span style="color:#f92672">.</span>shape[:<span style="color:#ae81ff">2</span>]
+
+    <span style="color:#75715e"># Return original image if no need to resize</span>
+    <span style="color:#66d9ef">if</span> width <span style="color:#f92672">is</span> None <span style="color:#f92672">and</span> height <span style="color:#f92672">is</span> None:
+        <span style="color:#66d9ef">return</span> image
+
+    <span style="color:#75715e"># We are resizing height if width is none</span>
+    <span style="color:#66d9ef">if</span> width <span style="color:#f92672">is</span> None:
+        <span style="color:#75715e"># Calculate the ratio of the height and construct the dimensions</span>
+        r <span style="color:#f92672">=</span> height <span style="color:#f92672">/</span> float(h)
+        dim <span style="color:#f92672">=</span> (int(w <span style="color:#f92672">*</span> r), height)
+    <span style="color:#75715e"># We are resizing width if height is none</span>
+    <span style="color:#66d9ef">else</span>:
+        <span style="color:#75715e"># Calculate the ratio of the 0idth and construct the dimensions</span>
+        r <span style="color:#f92672">=</span> width <span style="color:#f92672">/</span> float(w)
+        dim <span style="color:#f92672">=</span> (width, int(h <span style="color:#f92672">*</span> r))
+
+    <span style="color:#75715e"># Return the resized image</span>
+    <span style="color:#66d9ef">return</span> cv2<span style="color:#f92672">.</span>resize(image, dim, interpolation<span style="color:#f92672">=</span>inter)
+
+
+<span style="color:#75715e"># Call the methods. Either Blocking (using generator) or Non-Blocking using threads</span>
+<span style="color:#75715e"># non_blocking()</span>
 blocking()
-</code></pre>
-<div style="padding-top: 100px">
+
+</code></pre></div><div style="padding-top: 100px">
 <hr/>
 <h3 align="center">Sponsorship</h3>
 
@@ -920,19 +921,19 @@ blocking()
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1608312441"></script>
-    <script src="/js/perfect-scrollbar.min.js?1608312441"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1608312441"></script>
-    <script src="/js/jquery.sticky.js?1608312441"></script>
-    <script src="/js/featherlight.min.js?1608312441"></script>
-    <script src="/js/highlight.pack.js?1608312441"></script>
+    <script src="/js/clipboard.min.js?1610056864"></script>
+    <script src="/js/perfect-scrollbar.min.js?1610056864"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1610056864"></script>
+    <script src="/js/jquery.sticky.js?1610056864"></script>
+    <script src="/js/featherlight.min.js?1610056864"></script>
+    <script src="/js/highlight.pack.js?1610056864"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1608312441"></script>
-    <script src="/js/learn.js?1608312441"></script>
-    <script src="/js/hugo-learn.js?1608312441"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1610056864"></script>
+    <script src="/js/learn.js?1610056864"></script>
+    <script src="/js/hugo-learn.js?1610056864"></script>
     
         
-            <script src="/mermaid/mermaid.js?1608312441"></script>
+            <script src="/mermaid/mermaid.js?1610056864"></script>
         
         <script>
             mermaid.initialize({ startOnLoad: true });
