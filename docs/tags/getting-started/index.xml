@@ -25,7 +25,7 @@ GO111MODULE=on go get -u github.com/ReolinkCameraAPI/reolinkapigo@v0.0.1  From s
       
       <guid>https://reolink.oleaintueri.com/reolink-python/getting-started/</guid>
       <description>Installation Via Pip Install the package via Pip
-pip install reolink-api==0.0.5  From GitHub Install the package directly from GitHub
+pip install reolinkapi  From GitHub Install the package directly from GitHub
 pip install git+https://github.com/ReolinkCameraAPI/reolink-python-api.git   Sponsorship  Oleaintueri is sponsoring the development and maintenance of these projects within their organisation.   </description>
     </item>
     

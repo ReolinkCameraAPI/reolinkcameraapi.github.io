@@ -14,7 +14,7 @@
       
       <guid>https://reolink.oleaintueri.com/reolink-python/examples/examples-streaming/</guid>
       <description>This example opens the cameras&#39; RTSP stream and displays it in an OpenCV window
-import cv2 from Camera import Camera def non_blocking(): print(&amp;#34;calling non-blocking&amp;#34;) def inner_callback(img): cv2.imshow(&amp;#34;name&amp;#34;, maintain_aspect_ratio_resize(img, width=600)) print(&amp;#34;got the image non-blocking&amp;#34;) key = cv2.waitKey(1) if key == ord(&amp;#39;q&amp;#39;): cv2.destroyAllWindows() exit(1) c = Camera(&amp;#34;192.168.1.112&amp;#34;, &amp;#34;admin&amp;#34;, &amp;#34;jUa2kUzi&amp;#34;) # t in this case is a thread t = c.open_video_stream(callback=inner_callback) print(t.is_alive()) while True: if not t.is_alive(): print(&amp;#34;continuing&amp;#34;) break # stop the stream # client.</description>
+import cv2 from reolinkapi import Camera def non_blocking(): print(&amp;#34;calling non-blocking&amp;#34;) def inner_callback(img): cv2.imshow(&amp;#34;name&amp;#34;, maintain_aspect_ratio_resize(img, width=600)) print(&amp;#34;got the image non-blocking&amp;#34;) key = cv2.waitKey(1) if key == ord(&amp;#39;q&amp;#39;): cv2.destroyAllWindows() exit(1) c = Camera(&amp;#34;192.168.1.112&amp;#34;, &amp;#34;admin&amp;#34;, &amp;#34;jUa2kUzi&amp;#34;) # t in this case is a thread t = c.open_video_stream(callback=inner_callback) print(t.is_alive()) while True: if not t.is_alive(): print(&amp;#34;continuing&amp;#34;) break # stop the stream # client.</description>
     </item>
     
   </channel>

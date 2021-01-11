@@ -12,7 +12,7 @@ tags: ["getting started", "installation", "contributing"]
 
 Install the package via Pip
 
-    pip install reolink-api==0.0.5
+    pip install reolinkapi
 
 ### From GitHub
 
