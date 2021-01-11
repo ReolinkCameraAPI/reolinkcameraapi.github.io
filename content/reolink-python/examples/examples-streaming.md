@@ -12,7 +12,7 @@ This example opens the cameras' RTSP stream and displays it in an OpenCV window
 
 import cv2
 
-from Camera import Camera
+from reolinkapi import Camera
 
 
 def non_blocking():
